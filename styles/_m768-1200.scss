@@ -1,0 +1,161 @@
+@media (max-width: 1200px) {
+  
+  .center {
+    padding: 0 calc(50% - 366px);
+  }
+
+  .header {
+    .call-button {
+      display: none;
+      &_img {
+        display: block;
+        margin-bottom: 6px;
+      }
+    }
+  }
+
+  .preview {
+    display: block;
+    width: 100%;
+    background-image: url(../img/YellowGirl.png);
+    background-repeat: no-repeat;
+    background-position: 112% 105%;
+    background-size: 392px 681px;
+    >h1 {
+      display: block;
+      margin-top: 60px;
+    }
+    &__left {
+      // margin-top: 80px;
+      width: 66%;
+      h1 {
+        display: none;
+      }
+      >p {
+        margin-top: 68px;
+      }
+      .stars {
+        margin-top: 80px;
+        grid-template: 1fr 1fr 1fr 1fr / 1fr;
+        grid-row-gap: 30px;
+      }
+      h5 {
+        margin-top: 85px;
+      }
+    }
+    &__right {
+      display: none;
+    }
+    .stars, h5, .button {
+      max-width: 312px;
+    }
+  }
+  
+  .condition {
+    margin-top: 46px;
+    grid-gap: 40px 24px;
+  }
+
+  .stages {
+    flex-direction: column;
+    &__left {
+      align-items: center;
+    }
+    &__number {
+      justify-content: center;
+    }
+    p {
+      text-align: center;
+      max-width: 564px;
+    }
+    &__block {
+      margin-top: 32px;
+    }
+    &__right {
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+
+  .callback {
+    &__text {
+      margin-top: 40px !important;
+    }
+    &__block {
+      flex-direction: row;
+      flex-wrap: wrap;
+      & > div {
+        flex-basis: 354px;
+      }
+    }
+    &__input input {
+      padding: 24px;
+    }
+    &__submit {
+      margin: 24px auto 0;
+    }
+  }
+
+  .steps {
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-gap: 40px 24px;
+    &__block {
+      max-width: none;
+    }
+  }
+
+  .presentation {
+    &__timer {
+      margin-top: 24px;
+    }
+    &__block {
+      flex-direction: column;
+    }
+    &__left {
+      width: 100%;
+      max-width: none;
+    }
+    &__right {
+      margin: 35px auto 0;
+      max-width: 394px;
+    }
+    &__text {
+      margin-bottom: 33px;
+    }
+  }
+
+  .interview {
+    flex-direction: column;
+    &__left {
+      width: 100%;
+    }
+    &__right {
+      max-width: none;
+    }
+  }
+
+  .contacts {
+    flex-direction: column;
+    &__left {
+      max-width: none;
+      width: 100%;
+    }
+    .callback__submit .button {
+      padding: 27px;
+    }
+    &__text {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        flex-basis: 192px;
+        margin-top: 0;
+      }
+    }
+    &__right {
+      width: 100%;
+      height: 674px;
+      margin-top: 40px;
+    }
+  }
+}

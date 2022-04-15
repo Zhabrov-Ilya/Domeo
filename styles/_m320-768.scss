@@ -1,0 +1,182 @@
+@media (max-width: 768px) {
+  
+  h1, h2 {
+    font-size: 28px;
+  }
+
+  .center {
+    padding: 0 15px;
+  }
+
+  .title {
+    margin-top: 80px;
+    p {
+      font-size: 16px;
+      margin-top: 12px;
+    }
+  }
+
+  .attention {
+    align-items: flex-start;
+    padding: 20px;
+    img {
+      margin-right: 16px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .header {
+    .phone, h5 {
+      display: none;
+    }
+    &_footer {
+      padding: 40px 32px;
+      flex-direction: column;
+      margin-top: 40px;
+      .phone, .call-button, h5 {
+        display: block;
+      }
+      .header__right {
+        flex-direction: column;
+      }
+    }
+  }
+
+  .preview {
+    background-image: none;
+    h1 {
+      margin-top: 30px;
+      text-align: center;
+    }
+    &__left {
+      width: 100%;
+      p {
+        margin-top: 12px;
+        font-size: 16px;
+        text-align: center;
+      }
+      .girl_mob {
+        display: block;
+        max-width: 284px;
+        margin: 22px auto 0;
+      }
+      h5 {
+        margin-top: 32px;
+        text-align: center;
+        max-width: none;
+      }
+      .button {
+        max-width: none;
+      }
+    }
+    .stars {
+      margin: auto;
+      margin-top: 16px;
+      max-width: 265px;
+      grid-row-gap: 16px;
+      &__block {
+        flex-direction: column;
+      }
+    }
+  }
+
+  .condition {
+    margin-top: 40px;
+    grid-template: repeat(8, 1fr) / 1fr;
+  }
+
+  .stages {
+    margin-top: 0;
+    &__block {
+      margin-top: 20px;
+      p {
+        font-size: 16px;
+      }
+    }
+    &__right {
+      display: none;
+    }
+  }
+
+  .callback {
+    &__text {
+      margin-top: 80px !important;
+      font-size: 16px;
+    }
+    &__block {
+      text-align: center;
+      margin-top: 20px !important;
+    }
+    &__input {
+      p {
+        text-align: left;
+        font-size: 14px;
+        margin-left: 30px;
+      }
+      input {
+        max-width: 304px;
+        max-height: 52px;
+      }
+    }
+    &__submit {
+      margin-top: 24px !important;
+      max-width: 304px;
+    }
+  }
+
+  .steps {
+    grid-template: repeat(4, 1fr) / 1fr;
+    &__block {
+      padding-left: 69px;
+    }
+  }
+
+  .presentation {
+    &__timer p {
+      font-size: 14px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+    .button {
+      padding: 27px 0;
+    }
+  }
+
+  .interview {
+    margin-top: 20px;
+    h3 {
+      text-align: center;
+      font-size: 16px;
+    }
+    &__blocks {
+      margin-top: 20px;
+    }
+    &__block p {
+      font-size: 16px;
+    }
+    .callback__text {
+      margin-top: 40px !important;
+    }
+  }
+
+  .contacts {
+    margin-top: 0;
+    .callback__text {
+      margin-top: 20px !important;
+    }
+    &__text {
+      flex-direction: column;
+      p {
+        margin-top: 30px;
+        flex-basis: content;
+      }
+    }
+    &__right {
+      min-height: 800px;
+    }
+  }
+
+}
