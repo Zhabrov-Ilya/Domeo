@@ -31,6 +31,64 @@ h6 {
   padding: 0 calc(50% - 608px);
 }
 
+.modal {
+  width: calc(100% - 30px);
+  max-width: 380px;
+  padding: 28px 20px 22px;
+  position: fixed;
+  top:100px;
+  left: calc(50% - 187px);
+  z-index: 10;
+  border-radius: 12px;
+  background-color: #fff;
+  &__cross {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    cursor: pointer;
+  }
+  .callback {
+    padding: 0;
+    &__text {
+      max-width: 304px;
+      margin-top: 0 !important;
+      margin-bottom: 0;
+      text-align: left;
+    }
+    &__input, &__submit {
+      max-width: none;
+    }
+  }
+}
+
+@media (max-width: 411px) {
+  .modal {
+    left: 15px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+#blur-container {
+  background-color: #fff;
+}
+
+.blur {
+  filter: brightness(30%);
+  transition: all 0.5s;
+}
+
+.no-blur {
+  filter: brightness(100%);
+  transition: all 0.5s;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
 .button {
   display: block;
   padding: 18px 0;

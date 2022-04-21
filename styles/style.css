@@ -24,6 +24,68 @@ h6 {
   padding: 0 calc(50% - 608px);
 }
 
+.modal {
+  width: calc(100% - 30px);
+  max-width: 380px;
+  padding: 28px 20px 22px;
+  position: fixed;
+  top: 100px;
+  left: calc(50% - 187px);
+  z-index: 10;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.modal__cross {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  cursor: pointer;
+}
+
+.modal .callback {
+  padding: 0;
+}
+
+.modal .callback__text {
+  max-width: 304px;
+  margin-top: 0 !important;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.modal .callback__input, .modal .callback__submit {
+  max-width: none;
+}
+
+@media (max-width: 411px) {
+  .modal {
+    left: 15px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+#blur-container {
+  background-color: #fff;
+}
+
+.blur {
+  filter: brightness(30%);
+  transition: all 0.5s;
+}
+
+.no-blur {
+  filter: brightness(100%);
+  transition: all 0.5s;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
 .button {
   display: block;
   padding: 18px 0;
@@ -503,6 +565,9 @@ h6 {
     display: block;
     margin-bottom: 6px;
   }
+  .header_footer h5 {
+    max-width: 180px;
+  }
   .preview {
     display: block;
     width: 100%;
@@ -564,6 +629,7 @@ h6 {
   }
   .callback__text {
     margin-top: 40px !important;
+    margin-bottom: 50px;
   }
   .callback__block {
     flex-direction: row;
@@ -672,8 +738,24 @@ h6 {
   .header_footer .phone, .header_footer .call-button, .header_footer h5 {
     display: block;
   }
+  .header_footer .phone {
+    margin-top: 40px;
+    margin-right: 0;
+  }
+  .header_footer .header__left {
+    justify-content: space-between;
+  }
+  .header_footer .header__left img {
+    margin-right: 36px;
+  }
   .header_footer .header__right {
     flex-direction: column;
+  }
+  .header_footer .call-button {
+    margin-top: 20px;
+  }
+  .header_footer .call-button_img {
+    display: none;
   }
   .preview {
     background-image: none;
@@ -728,26 +810,44 @@ h6 {
   .stages__right {
     display: none;
   }
+  .callback {
+    padding: 0 20px;
+  }
   .callback__text {
     margin-top: 80px !important;
+    margin-bottom: 50px;
     font-size: 16px;
   }
   .callback__block {
-    text-align: center;
     margin-top: 20px !important;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .callback__block > div {
+    flex-basis: content;
+  }
+  .callback__input {
+    width: 100%;
+    max-width: 304px;
   }
   .callback__input p {
     text-align: left;
     font-size: 14px;
-    margin-left: 30px;
+    margin-left: 10px;
   }
   .callback__input input {
-    max-width: 304px;
+    max-width: none;
     max-height: 52px;
   }
   .callback__submit {
     margin-top: 24px !important;
     max-width: 304px;
+  }
+  .callback_max .callback__text {
+    margin-bottom: 20px;
+  }
+  .callback_max .callback__submit, .callback_max .callback__input {
+    width: 100% !important;
   }
   .steps {
     grid-template: repeat(4, 1fr)/1fr;

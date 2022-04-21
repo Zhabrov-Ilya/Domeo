@@ -38,8 +38,24 @@
       .phone, .call-button, h5 {
         display: block;
       }
+      .phone {
+        margin-top: 40px;
+        margin-right: 0;
+      }
+      .header__left {
+        justify-content: space-between;
+      }
+      .header__left img {
+        margin-right: 36px;
+      }
       .header__right {
         flex-direction: column;
+      }
+      .call-button {
+        margin-top: 20px;
+      }
+      .call-button_img {
+        display: none;
       }
     }
   }
@@ -101,28 +117,45 @@
   }
 
   .callback {
+    padding: 0 20px;
     &__text {
       margin-top: 80px !important;
+      margin-bottom: 50px;
       font-size: 16px;
     }
     &__block {
-      text-align: center;
+      // text-align: center;
       margin-top: 20px !important;
+      flex-direction: column !important;
+      align-items: center;
+      & > div {
+        flex-basis: content;
+      }
     }
     &__input {
+      width: 100%;
+      max-width: 304px;
       p {
         text-align: left;
         font-size: 14px;
-        margin-left: 30px;
+        margin-left: 10px;
       }
       input {
-        max-width: 304px;
+        max-width: none;
         max-height: 52px;
       }
     }
     &__submit {
       margin-top: 24px !important;
       max-width: 304px;
+    }
+    &_max {
+      .callback__text {
+        margin-bottom: 20px;
+      }
+      .callback__submit, .callback__input {
+        width: 100% !important;
+      }
     }
   }
 
