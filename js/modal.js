@@ -12,12 +12,7 @@ function openModal() {
   blurContainer.classList.add('blur', 'disabled');
 }
 
-openBtns.forEach(e => {
-  e.addEventListener('click', openModal)
-});
-
-
-closeBtn.addEventListener('click', function () {
+function closeModal() {
   modal.classList.remove('animate__bounceIn');
   modal.classList.add('animate__bounceOut');
   blurContainer.classList.add('no-blur');
@@ -25,4 +20,14 @@ closeBtn.addEventListener('click', function () {
     modal.classList.add('hidden');
     blurContainer.classList.remove('blur', 'disabled');
   }, {once: true});
+}
+
+openBtns.forEach(e => {
+  e.addEventListener('click', openModal)
+});
+
+closeBtn.addEventListener('click', closeModal);
+
+window.addEventListener('load', () => {
+  setTimeout(openModal, 2000);
 });
